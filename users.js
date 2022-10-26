@@ -9,6 +9,7 @@ export function populateUserTable(users, clickHandler = () => {}) {
         userNameCell.textContent = username;
         fullNameCell.textContent = name;
         emailCell.textContent = email;
+        emailCell.id = "email-col";
         userRow.className = "user-row";
         userRow.id = id;
         userRow.onclick = () => clickHandler(id, username);
